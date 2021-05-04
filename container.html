@@ -1,0 +1,219 @@
+
+
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    .alto{
+      height: 200px;
+    }
+    </style>
+    <title></title>
+
+  </head>
+  <body>
+    <div class="container">
+    <p><b>Contaier:</b>define que el contenido aparezca centrado y con un ancho fijo.</p>
+    <p><b>Row:</b>aplican márgenes negativos. Las columnas de la rejilla definen su anchura especificando cuántas de las 12 columnas de la fila ocupan.</p>
+ <p><b>Col:</b>Son las columnas que vamos a dividir la pantalla, hay 12 columnas</p>
+    <p>container= container con margen div class container</p>
+       </div>
+     <div class="container-fluid">
+       <p>container-fluid= container sin margen div class container-fluid</p>
+
+
+   </div>
+<div class="container-fluid bg-primary py-5">
+  <div class="container text-white">
+    <h1 class="display3"><b>Ejercicio con margenes</b></h1>
+    <p>bg-primary darle color al container...py-5 tamano container</p>
+    <p>text-white color a la letra</p>
+</div>
+  </div>
+
+  <h1>Columnas (row)</h1>
+     </div>
+<div class="container">
+  <div class="row">
+    <div class="col-4 bg-primary" >
+  <p>1ro coloco container</p>
+     </div>
+     <div class="col-4 bg-success">
+     <p>2do coloco row como una class nueva que significa que estoy haciendo una fila</p>
+      </div>
+      <div class="col-4 bg-primary">
+    <p>3ro el numero de col-X, col significa que estoy haciendo una columna, siempre se divide en 12 columnas el total ej col-4 y aca elijo si le pongo color a la columna</p>
+       </div>
+</div>
+<hr>
+<p><b>una columna dentro de otra columna</b><p>
+  <div class="row">
+    <div class="col-4 bg-primary" >
+      <div class="row">
+      <div class="col-6 bg-success">
+    <p>1ra a </p>
+       </div>
+
+
+     <div class="col-6 bg-success">
+   <p>1ra b</p>
+      </div>
+
+    </div>
+     </div>
+
+     <div class="col-4 bg-success">
+     <p>2da</p>
+      </div>
+      <div class="col-4 bg-primary">
+    <p>3ra</p>
+       </div>
+
+</div>
+<hr>
+<div class="row">
+  <div class="col-3 bg-primary" >
+<p>1ra, para generar nueva linea de columna coloco ROW nuevamente</p>
+   </div>
+   <div class="col-3 bg-success">
+   <p>2da</p>
+    </div>
+    <div class="col-3 bg-primary">
+  <p>3ra</p>
+     </div>
+     <div class="col-3 bg-success">
+   <p>4ta</p>
+      </div>
+</div>
+</div>
+<hr>
+
+<h1>Diseño responsive (grid responsive)</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-4 bg-primary" >
+  <p><b>EXTRA SMALL (Pequeño) </b></p>
+     </div>
+     <div class="col-4 bg-success">
+     <p>< 576 px .col- </p>
+      </div>
+      <div class="col-4 bg-primary">
+    <p>max container width= None (auto)</p>
+  </div>
+</div>
+<hr>
+
+
+  <div class="row">
+    <div class="col-4 bg-primary" >
+  <p><b> SMALL (Dispositivos moviles) </b></p>
+     </div>
+     <div class="col-4 bg-success">
+     <p>  o = 576 px <b>.col-sm</b></p>
+     </div>
+        <div class="col-4 bg-primary">
+      <p>max container width=540px  </p>
+         </div>
+
+</div>
+
+      <hr>
+
+        <div class="row">
+         <div class="col-4 bg-primary" >
+       <p><b> MEDIUM (Tablet), </b></p>
+          </div>
+          <div class="col-4 bg-success">
+          <p> >o =768 px <b>.col-md</b></p>
+           </div>
+           <div class="col-4 bg-primary">
+         <p>max container width=720px</p>
+            </div>
+     </div>
+
+     <hr>
+
+     <div class="row">
+      <div class="col-4 bg-primary" >
+    <p><b> LARGE (computadora), </b></p>
+       </div>
+       <div class="col-4 bg-success">
+       <p> >o =992 px <b>.col-lg</b></p>
+        </div>
+        <div class="col-4 bg-primary">
+      <p>max container width=960px</p>
+         </div>
+         </div>
+
+<hr>
+
+         <div class="row">
+          <div class="col-4 bg-primary" >
+        <p><b> EXTRA LARGE (Televisor) </b></p>
+           </div>
+           <div class="col-4 bg-success">
+           <p> >o =1200 px <b>.col-xl</b></p>
+            </div>
+            <div class="col-4 bg-primary">
+          <p>max container width=1140px</p>
+             </div>
+</div>
+      </div>
+       <br>
+         <br>
+      <h2>Adaptar las columnas (col-) a distintos dipositivos</h2>
+      <p>Tenemos el nombre Col- y le agregamos un apellido sm , md, lg, xl <p>
+       <p>Cuanto mas chico es el Dispositivo menos columnas vamos definir, si es un celular vamos a usar col-sm12 </p>
+       <p>Ejemplo: col-sm12 col-md-6 col-lg-4</p>
+                  <p>col-sm12 col-md-6 col-lg-4</p>
+                  <p>col-sm12 col-md-6 col-lg-4</p>
+                  <p>col-sm12 col-md-6 col-lg-4 </p>
+                  <p>En este ejemplo estoy organizando 4 columnas para los ditintos dipositivos, en el celular voy a ver una columna COL-SM-12, en la tablet voy a ver dos columnas col-md-6 y en la compu 3 columnas col-lg-4</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 bg-primary" >
+          <p>1ro </p>
+           </div>
+           <div class="col-sm-12 col-md-6 col-lg-4 bg-success">
+           <p>2do </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 bg-primary">
+          <p>3ro</p>
+             </div>
+
+        </div>
+              </div>
+
+
+              <hr>
+
+              <h1 class="py-5 text-center"> Alineamiento de container</h1>
+              <div class="container">
+              <div class="row bg-success text-white  alto">
+                <div class="col-md-4 align-self-start">align-items-start:alinear arriba de la columna</div>
+                <div class="col-md-4 align-self-center">align-items-center:alinear centro de la columna</div>
+                <div class="col-md-4 align-self-end">align-items-end:alinear abajo de la columna</div>
+              </div>
+              </div>
+<hbr>
+<hr>
+<br>
+
+
+</div>
+
+
+              <!-- Optional JavaScript -->
+              <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+              <script src="js/bootstrap.min.js" ></script>
+            </body>
+            </html>
